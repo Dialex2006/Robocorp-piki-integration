@@ -1,0 +1,11 @@
+tasks:
+  Update status in Netsuite:
+    shell: python tasks.py
+
+condaConfigFile: conda.yaml
+artifactsDir: output
+
+PATH:
+  - .
+PYTHONPATH:
+  - .
