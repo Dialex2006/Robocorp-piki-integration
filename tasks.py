@@ -107,8 +107,7 @@ def process_emails_and_scrape_book_numbers():
     # Convert the soup object to text and search for the barcode pattern
     email_text = soup.get_text()
 
-    # Adjust the pattern as necessary based on the expected format of the barcode
-    #barcode_pattern = r"Barcode: (\w+)"
+    # Adjust the pattern as necessary based on the expected format of the title
     title_pattern = r"Title: (.*?)Due date"
 
     # Use re.findall to get all occurrences of the barcode pattern in the email content

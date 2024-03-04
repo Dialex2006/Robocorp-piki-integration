@@ -1,5 +1,5 @@
 tasks:
-  Update status in Netsuite:
+  Scrape data from email:
     shell: python tasks.py
 
 condaConfigFile: conda.yaml
