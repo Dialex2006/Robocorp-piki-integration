@@ -73,8 +73,8 @@ def renew_loans(book_names : list):
     # Confirm the choice
     browser_lib.wait_until_element_is_visible("id:confirm_renew_selected_yes", timeout=30)
 
-    # Then click the button
-    browser_lib.click_element("id:confirm_renew_selected_yes")
+    # Then click the button - temporarily commented out to avoid accidental renewals during testing
+    #browser_lib.click_element("id:confirm_renew_selected_yes")
 
     # Sleep for 5 seconds
     time.sleep(5)
